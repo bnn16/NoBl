@@ -119,7 +119,7 @@ The project delivers an interactive, Kahoot/Tinder-style game facilitating busin
 
 | Week | Focus | Deliverables | Documents Updated |
 |------|-------|-------------|-------------------|
-| 1-4 | Research and preliminary design | Project Pitch, Research plan, Entry portfolio Doc | Project Pitch, Research plan, Entry portfolio Doc, Research Plan and Process Implementation document |
+| 1-4 | Research and preliminary design | Project Pitch, Research plan, Entry portfolio Doc | Project Pitch, Research plan, Entry portfolio Doc, Research Plan |
 | 5-8 | Core implementation (lexer, parser) | Lexer implementation, Parser prototype | Implementation Details, Entry portfolio Doc |
 | 9-12 | Interpreter development | Working interpreter for core language features | Implementation Details, Design Documentation |
 | 13-16 | Compiler | Bytecode specification | Implementation Details |
