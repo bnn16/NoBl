@@ -10,6 +10,8 @@ This document serves as the central navigation hub for my Advanced Software Engi
 The portfolio demonstrates my progress in both my group project and my individual project (NoBl programming language).
 
 ## Reading Guide
+*Note: This portfolio is a living document that will be updated throughout the semester as projects progress so some of the files might not be available at the moment of reading*
+
 This portfolio consists of the following key documents that will be delivered throughout the semester:
 
 1. **Project Plan** - Outlines the scope, objectives, research questions, timeline, and resource requirements for individual project. Includes key milestones and deliverables.
@@ -25,15 +27,15 @@ This portfolio consists of the following key documents that will be delivered th
 
 ## Projects Overview
 
-### Group Project: Eviden Business-IT Alignment Game
-The project delivers an interactive, Kahoot/Tinder-style game facilitating business-IT alignment for management teams. The cloud-deployed solution enables players to participate remotely on various devices, with multi-language support and secure data persistence. The game visualizes mismatches between business models and IT systems, helping organizations optimize IT costs through informed decision-making.
-
-*For more details on the Eviden Business-IT Alignment Game, refer to the My Part in the Group Project document.*
-
 ### Individual Project: NoBl Programming Language
 NoBl (No Bloat) is a lightweight, efficient interpreted programming language focusing on simplicity and performance. Following a functional paradigm, the project involves developing a complete language implementation, including lexer, parser, AST, compiler, and virtual machine.
 
 *For more details on the NoBl language concept, architecture, and development approach, refer to the Project Plan document.*
+
+### Group Project: Eviden Business-IT Alignment Game
+The project delivers an interactive, Kahoot/Tinder-style game facilitating business-IT alignment for management teams. The cloud-deployed solution enables players to participate remotely on various devices, with multi-language support and secure data persistence. The game visualizes mismatches between business models and IT systems, helping organizations optimize IT costs through informed decision-making.
+
+*For more details on the Eviden Business-IT Alignment Game, refer to the My Part in the Group Project document.*
 
 ## Learning Outcomes Progress
 
