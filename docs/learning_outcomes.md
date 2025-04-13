@@ -4,8 +4,7 @@ _Last updated: April 13, 2025_
 This document outlines how the NoBl Programming Language project addresses each of the seven learning outcomes for the Advanced Software Engineering course.
 
 ## Learning Outcome 1 - Professional Standard
-**Current Status:** In progress  
-**Self-Assessment Grade:** In progress. Grade to be determined once I have enough evidence
+**Self-Assessment Grade:** Beginning
 
 ### Evidence from NoBl Project:
 
@@ -35,8 +34,7 @@ This document outlines how the NoBl Programming Language project addresses each 
 - Create API documentation for integration with other components
 
 ## Learning Outcome 2 - Personal Leadership
-**Current Status:** Initial stage  
-**Self-Assessment Grade:** In progress. Grade to be determined once I have enough evidence
+**Self-Assessment Grade:** Beginning/Proficient
 
 ### Evidence from NoBl Project:
 
@@ -66,8 +64,7 @@ This document outlines how the NoBl Programming Language project addresses each 
 - Establish clearer metrics for evaluating implementation success
 
 ## Learning Outcome 3 - Scalable Architectures
-**Current Status:** Planning phase  
-**Self-Assessment Grade:** In progress. Grade to be determined once I have enough evidence
+**Self-Assessment Grade:** Beginning
 
 ### Evidence from NoBl Project:
 
@@ -86,19 +83,15 @@ This document outlines how the NoBl Programming Language project addresses each 
 - Implemented efficient character processing with minimal memory overhead
 - Designed lookup tables for keywords to optimize token identification
 
-#### Quality Verification
-- Tested lexer performance with large input samples
-- Implemented benchmarking capabilities for critical lexer operations
-- Documented performance characteristics of the current implementation
-
 ### Next Steps for LO3:
 - Develop more formal performance benchmarks for lexer operations
 - Create architecture documentation for the parser component
 - Establish quality attributes for the evaluator design
 
 ## Learning Outcome 4 - Development and Operations (DevOps)
-**Current Status:** Not started  
-**Self-Assessment Grade:** Not started
+**Self-Assessment Grade:** Orienting
+
+I setup the CI pipelines for the FE in the group project.
 
 ### Planned Activities for NoBl Project:
 
@@ -154,25 +147,19 @@ This document outlines how the NoBl Programming Language project addresses each 
 - Implement basic cloud integration by Week 17
 
 ## Learning Outcome 6 - Security by Design
-**Current Status:** Planning phase  
-**Self-Assessment Grade:** In progress. Grade to be determined once I have enough evidence
+**Self-Assessment Grade:** Beginning 
+Most of this Learning outcome for now is covered in the Group Project, by me leading the making of the API contracts and how we will handle the data flow from FE to BE and making it secure by design. By using email verification, SQL Injection validations, form validation in the front-end, minimalistic API's.
 
 ### Evidence from NoBl Project:
 
 #### Security Research
 - Researched common security vulnerabilities in language design
-- Investigated injection attack vectors in interpreted languages
+- Investigated injection attack vectors in interpreted languages ( and figured out how to use Variable Tainting )
 - Studied memory safety approaches in modern language implementations
 
 #### Secure Design Practices
-- Implemented input validation in the lexer to prevent injection attacks
 - Designed error handling to avoid information leakage
 - Planned for memory safety in the evaluator design
-
-#### Security Documentation
-- Documented security considerations in language design decisions
-- Created guidelines for secure NoBl program development
-- Planned security testing approach for the interpreter
 
 ### Next Steps for LO6:
 - Implement security-focused test cases for the parser
@@ -180,8 +167,9 @@ This document outlines how the NoBl Programming Language project addresses each 
 - Create security review checklist for code contributions
 
 ## Learning Outcome 7 - Distributed Data
-**Current Status:** Not started  
-**Self-Assessment Grade:** Not started
+**Self-Assessment Grade:** Orienting
+
+This for now is handled by the Group project by making efficient minimalistic API designs that allow the server side to be able to handle a lot of requests.
 
 ### Planned Activities for NoBl Project:
 
