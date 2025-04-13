@@ -1,4 +1,3 @@
-# Individual Research Plan: Designing & Implementing NoBl Programming Language
 
 ## Research Topic & Motivation
 

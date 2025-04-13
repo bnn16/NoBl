@@ -1,4 +1,4 @@
-# NoBl: No Bloat, Just Build.
+# NoBl Project Plan - Project Pitch
 
 * NoBl is a new, lightweight, and efficient interpreted programming language designed with a focus on simplicity and performance. It will follow a functional paradigm, drawing inspiration from JavaScript's flexibility but avoiding the complexities of object-oriented class structures.
 * The project involves developing a complete language implementation, starting with a lexer, parser, and Abstract Syntax Tree (AST) to create an interpreter. Subsequently, a compiler will be built to generate bytecode, which will then be executed by a custom stack-based virtual machine.
