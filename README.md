@@ -58,7 +58,7 @@ if (result > 10) {
 
 This project is documented through several key documents:
 
-1. **[Learning Outcomes Coverage](docs/learning_outcomes_coverage.md)** - Describes how the project addresses each learning outcome
+1. **[Learning Outcomes Coverage](docs/learning_outcomes.md)** - Describes how the project addresses each learning outcome
 2. **[Research Plan](docs/research_plan.md)** - Details research methodology, questions, and findings
 3. **[Research Plan Implementation](docs/research_plan_implementation.md)** - Implementation findings and answers to research questions.
 4. **[Implementation Details](docs/implementation_details.md)** - Technical documentation of the language implementation
