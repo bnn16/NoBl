@@ -43,7 +43,6 @@ func TestSimpleToken(t *testing.T) {
 	}
 }
 
-
 func TestComplexTokens(t *testing.T) {
 	input := `const five = 5;
 const ten = 10;
