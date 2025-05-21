@@ -1,1 +1,1 @@
-web: ./NoBl --web
+web: nobl --web
