@@ -4,7 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"io"
+	"nobl/evaluator"
 	"nobl/lexer"
+	"nobl/object"
 	"nobl/parser"
 )
 
@@ -12,6 +14,7 @@ const PROMPT = ">> "
 
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
+	env := object.NewEnvironment()
 
 	for {
 		fmt.Fprintf(out, PROMPT)
@@ -30,13 +33,18 @@ func Start(in io.Reader, out io.Writer) {
 			continue
 		}
 
-		io.WriteString(out, program.String())
-		io.WriteString(out, "\n")
+		evaluated := evaluator.Eval(program, env)
+		if evaluated != nil {
+			io.WriteString(out, evaluated.Inspect())
+			io.WriteString(out, "\n")
+		}
 	}
 }
 
 func printParserErrors(out io.Writer, errors []string) {
+	io.WriteString(out, "Woops! We ran into some shady business here!\n")
+	io.WriteString(out, " parser errors:\n")
 	for _, msg := range errors {
-		fmt.Fprintf(out, "\t%s\n", msg)
+		io.WriteString(out, "\t"+msg+"\n")
 	}
 }
