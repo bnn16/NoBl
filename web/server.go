@@ -640,22 +640,22 @@ func handleHealth(w http.ResponseWriter, r *http.Request) {
 
 // ServeWebREPL starts the web server for the REPL
 func ServeWebREPL(port int) {
-    // Register handlers
-    http.HandleFunc("/", handleRoot)
-    http.HandleFunc("/eval", handleEval)
-    http.HandleFunc("/health", handleHealth)
-    
-    // Get port from environment variable (for Heroku)
-    portStr := os.Getenv("PORT")
-    if portStr != "" {
-        fmt.Sscanf(portStr, "%d", &port)
-    }
-    
-    fmt.Printf("Starting NoBl Web REPL server on port %d...\n", port)
-    fmt.Printf("Open http://localhost:%d in your browser\n", port)
-    
-    err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
-    if err != nil {
-        panic(err)
-    }
+	// Register handlers
+	http.HandleFunc("/", handleRoot)
+	http.HandleFunc("/eval", handleEval)
+	http.HandleFunc("/health", handleHealth)
+
+	// Get port from environment variable (for Heroku)
+	portStr := os.Getenv("PORT")
+	if portStr != "" {
+		fmt.Sscanf(portStr, "%d", &port)
+	}
+
+	fmt.Printf("Starting NoBl Web REPL server on port %d...\n", port)
+	fmt.Printf("Open http://localhost:%d in your browser\n", port)
+
+	err := http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+	if err != nil {
+		panic(err)
+	}
 }
