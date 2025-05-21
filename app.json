@@ -1,0 +1,12 @@
+{
+	"name": "NoBl Programming Language",
+	"description": "Web-based REPL interface for the NoBl programming language",
+	"repository": "https://github.com/your-username/nobl",
+	"keywords": ["go", "nobl", "programming-language", "repl"],
+	"buildpacks": [
+		{
+			"url": "heroku/go"
+		}
+	],
+	"success_url": "/"
+}

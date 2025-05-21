@@ -1,0 +1,76 @@
+// examples.nobl - Showcase of NoBl programming language features
+
+// Variable bindings
+let name = "NoBl";
+let version = 1.0;
+let isAwesome = true;
+
+// Basic arithmetic
+let a = 10;
+let b = 5;
+let sum = a + b;       // 15
+let diff = a - b;      // 5
+let product = a * b;   // 50
+let quotient = a / b;  // 2
+
+// Function definition
+let add = fn(x, y) {
+  x + y
+};
+
+// Function calls
+let result = add(a, b);  // 15
+
+// Conditionals
+let max = fn(x, y) {
+  if (x > y) {
+    x
+  } else {
+    y
+  }
+};
+
+let larger = max(a, b);  // 10
+
+// Arrays
+let numbers = [1, 2, 3, 4, 5];
+let first = numbers[0];  // 1
+
+// Nested function calls
+let addThree = fn(x, y, z) {
+  x + y + z
+};
+
+let nestedResult = addThree(add(1, 2), 3, max(4, 5));  // 3 + 3 + 5 = 11
+
+// Higher-order functions
+let twice = fn(f, x) {
+  f(f(x))
+};
+
+let plusOne = fn(x) { x + 1 };
+let plusTwo = fn(x) { twice(plusOne, x) };
+
+let twoMore = plusTwo(10);  // 12
+
+// Closures
+let makeAdder = fn(x) {
+  fn(y) { x + y }
+};
+
+let addFive = makeAdder(5);
+let fifteen = addFive(10);  // 15
+
+// Recursive function (factorial)
+let factorial = fn(n) {
+  if (n == 0) {
+    1
+  } else {
+    n * factorial(n - 1)
+  }
+};
+
+let fac5 = factorial(5);  // 120
+
+// Return the last value as the result
+"All examples executed successfully!"

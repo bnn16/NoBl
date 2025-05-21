@@ -17,6 +17,7 @@ The project has completed the lexical analysis phase and is now focused on imple
 - ✅ Lexical analyzer (lexer)
 - ✅ Basic REPL (Read-Eval-Print Loop) for testing
 - ✅ Comprehensive lexer testing
+- ✅ Web-based REPL for showcasing
 
 ### In Progress:
 - 🔄 AST (Abstract Syntax Tree) design
@@ -48,6 +49,87 @@ if (result > 10) {
 ```
 
 ### Key Language Features
+
+## Usage
+
+### Build
+
+Before using NoBl, build the executable using the included build script:
+
+```bash
+./build.sh
+```
+
+This will create the `NoBl` executable in the current directory and set up necessary files.
+
+### Interactive REPL
+
+Start the interactive REPL (Read-Eval-Print Loop) to experiment with NoBl:
+
+```bash
+./NoBl
+```
+
+Or if you haven't built the executable yet:
+
+```bash
+go run main.go
+```
+
+### Execute a File
+
+You can execute a NoBl program from a file:
+
+```bash
+./NoBl path/to/your/program.nobl
+```
+
+Example program (`test.nobl`):
+
+```
+let five = 5;
+let ten = 10;
+let add = fn(x, y) { x + y };
+let result = add(five, ten);
+result;
+```
+
+The repository includes several example files:
+- `test.nobl` - A simple test program
+- `examples.nobl` - A comprehensive showcase of language features
+
+### Web REPL
+
+NoBl includes a web-based REPL that you can use to showcase the language in a browser:
+
+```bash
+go run main.go --web
+```
+
+Then open your browser and navigate to [http://localhost:8080](http://localhost:8080).
+
+You can specify a different port if needed:
+
+```bash
+go run main.go --web 3000
+```
+
+The web REPL provides a user-friendly interface with the following features:
+
+- Syntax highlighting for code input
+- Examples of NoBl code that you can run with a click
+- Multi-line code editor
+- Share button to create shareable code links
+- Documentation and language information tabs
+- Light and dark themes for comfortable coding
+
+You can also use the included shell script to start the web REPL:
+
+```bash
+./start_web_repl.sh
+# Or with a custom port:
+./start_web_repl.sh 3000
+```
 
 - **Functional Paradigm**: Functions are first-class citizens
 - **Immutability**: Encourages immutable data patterns through `const` declarations
@@ -124,3 +206,40 @@ This project is influenced by several resources:
 - "Writing an Interpreter in Go" by Thorsten Ball
 - "Crafting Interpreters" by Robert Nystrom
 - "Top Down Operator Precedence" by Vaughan Pratt
+
+## Cloud Deployment
+
+### Deploy to Heroku
+
+1. Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+2. Login to Heroku:
+   ```bash
+   heroku login
+   ```
+3. Create a new Heroku app:
+   ```bash
+   heroku create your-app-name
+   ```
+4. Push your code to Heroku:
+   ```bash
+   git push heroku main
+   ```
+5. Open your app:
+   ```bash
+   heroku open
+   ```
+
+### Manual Cloud Deployment
+
+1. Build the NoBl executable:
+   ```bash
+   go build
+   ```
+2. Set the PORT environment variable to the port your cloud provider requires:
+   ```bash
+   export PORT=8080
+   ```
+3. Run the executable:
+   ```bash
+   ./NoBl --web
+   ```
