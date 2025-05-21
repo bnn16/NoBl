@@ -12,6 +12,9 @@ type ObjectType string
 const (
 	NULL_OBJ  = "NULL"
 	ERROR_OBJ = "ERROR"
+	STRING_OBJ = "STRING"
+	BUILTIN_OBJ = "BUILTIN"
+
 
 	INTEGER_OBJ = "INTEGER"
 	BOOLEAN_OBJ = "BOOLEAN"
@@ -20,6 +23,23 @@ const (
 
 	FUNCTION_OBJ = "FUNCTION"
 )
+
+type BuiltinFunction func(args ...Object) Object
+
+type Builtin struct {
+    Fn BuiltinFunction
+}
+
+func (b *Builtin) Type() ObjectType { return BUILTIN_OBJ }
+func (b *Builtin) Inspect() string  { return "builtin function" }
+
+
+type String struct {
+    Value string
+}
+
+func (s *String) Type() ObjectType { return STRING_OBJ }
+func (s *String) Inspect() string  { return s.Value }
 
 type Object interface {
 	Type() ObjectType

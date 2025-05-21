@@ -25,6 +25,7 @@ const (
 	// literals
 	IDENTIFIER = "IDENTIFIER" // function or variable name
 	INT        = "INT"        // 123456...
+	STRING = "STRING" // "foobar"
 
 	// operators
 	ASSIGN   = "="
